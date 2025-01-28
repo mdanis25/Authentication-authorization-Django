@@ -3,6 +3,8 @@ from .forms import userForm
 from django.contrib.auth import authenticate, login, logout 
 from django.contrib.auth.decorators import login_required 
 
+
+
 @login_required(login_url='signin')
 def home(request): 
     return render(request, 'base.html')
@@ -52,4 +54,5 @@ def signin(request):
 def signout(request):
     logout(request) 
     return redirect('signin')
+
 
