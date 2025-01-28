@@ -5,4 +5,4 @@
 
 ![image alt](https://github.com/mdanis25/Authentication-authorization-Django/blob/c9caba710e37406cf7d9b15665acdabc207e4457/Screenshot%202025-01-29%20at%2002.17.30.png)
 
-![image alt]([)]()
+![image alt](https://github.com/mdanis25/Authentication-authorization-Django/blob/0dec98ac7894c06b6970163299e7a9a000d5d279/Screenshot%202025-01-29%20at%2002.40.07.png)
