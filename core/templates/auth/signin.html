@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+
+    <div class="form-container"> 
+        
+        {% if error %}
+            <p style="color: red;">{{erroe}}</p>
+            
+        {% endif %}
+            
+        <h2>ChatNexous</h2>
+        <h4>Login Form</h4>
+        
+        <form action="" method="POST">
+            {% csrf_token %}
+            
+            <input type="text" name="username" id="" class="form-control mb-3" placeholder="Enter username">
+            <input type="password" name="password" id="" class="form-control mb-3" placeholder="Enter password">
+            
+            <div class="d-grib gap-2">
+                <button class="btn btn-primary" type="submit">Login to your account</button>
+            </div>
+            <p>Don't have an account? <span><a href="{% url 'signup' %}">Sign up</a></span></p>
+        </form>
+    </div>
+    
+</body>
+</html>
